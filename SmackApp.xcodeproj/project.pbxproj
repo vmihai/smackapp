@@ -19,6 +19,7 @@
 		BA7E8CC820127D530075DAD4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CC720127D530075DAD4 /* Constants.swift */; };
 		BA7E8CCA2012818C0075DAD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CC92012818C0075DAD4 /* LoginVC.swift */; };
 		BA7E8CCC201283080075DAD4 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CCB201283080075DAD4 /* CreateAccountVC.swift */; };
+		BA7E8CCF201295600075DAD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CCE201295600075DAD4 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		BA7E8CC720127D530075DAD4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BA7E8CC92012818C0075DAD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BA7E8CCB201283080075DAD4 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		BA7E8CCE201295600075DAD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		BA7E8CA52012632F0075DAD4 /* SmackApp */ = {
 			isa = PBXGroup;
 			children = (
+				BA7E8CCD201295490075DAD4 /* Services */,
 				BA7E8CC620127D400075DAD4 /* Utilities */,
 				BA7E8CBF201269C10075DAD4 /* Model */,
 				BA7E8CBE201269BC0075DAD4 /* View */,
@@ -148,6 +151,14 @@
 				BA7E8CC720127D530075DAD4 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BA7E8CCD201295490075DAD4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA7E8CCE201295600075DAD4 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				BA7E8CC3201269F70075DAD4 /* ChannelVC.swift in Sources */,
 				BA7E8CC1201269E20075DAD4 /* ChatVC.swift in Sources */,
 				BA7E8CCC201283080075DAD4 /* CreateAccountVC.swift in Sources */,
+				BA7E8CCF201295600075DAD4 /* AuthService.swift in Sources */,
 				BA7E8CCA2012818C0075DAD4 /* LoginVC.swift in Sources */,
 				BA7E8CC520126F630075DAD4 /* GradientView.swift in Sources */,
 				BA7E8CA72012632F0075DAD4 /* AppDelegate.swift in Sources */,
