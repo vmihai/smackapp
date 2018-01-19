@@ -20,6 +20,7 @@
 		BA7E8CCA2012818C0075DAD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CC92012818C0075DAD4 /* LoginVC.swift */; };
 		BA7E8CCC201283080075DAD4 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CCB201283080075DAD4 /* CreateAccountVC.swift */; };
 		BA7E8CCF201295600075DAD4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CCE201295600075DAD4 /* AuthService.swift */; };
+		BA7E8CD12012AD590075DAD4 /* Roundedbutton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CD02012AD590075DAD4 /* Roundedbutton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BA7E8CC92012818C0075DAD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		BA7E8CCB201283080075DAD4 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		BA7E8CCE201295600075DAD4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BA7E8CD02012AD590075DAD4 /* Roundedbutton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundedbutton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				BA7E8CC420126F630075DAD4 /* GradientView.swift */,
+				BA7E8CD02012AD590075DAD4 /* Roundedbutton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				BA7E8CC3201269F70075DAD4 /* ChannelVC.swift in Sources */,
 				BA7E8CC1201269E20075DAD4 /* ChatVC.swift in Sources */,
 				BA7E8CCC201283080075DAD4 /* CreateAccountVC.swift in Sources */,
+				BA7E8CD12012AD590075DAD4 /* Roundedbutton.swift in Sources */,
 				BA7E8CCF201295600075DAD4 /* AuthService.swift in Sources */,
 				BA7E8CCA2012818C0075DAD4 /* LoginVC.swift in Sources */,
 				BA7E8CC520126F630075DAD4 /* GradientView.swift in Sources */,
