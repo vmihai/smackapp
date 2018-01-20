@@ -10,6 +10,7 @@
 		584422D9256CBF3F7960D11F /* Pods_SmackApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D776200560AD4E471B8A55A /* Pods_SmackApp.framework */; };
 		BA64106F20135B300019CD1B /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64106E20135B300019CD1B /* AvatarPickerVC.swift */; };
 		BA64107120135C870019CD1B /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64107020135C870019CD1B /* AvatarCell.swift */; };
+		BA64107320136B9D0019CD1B /* circleImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64107220136B9D0019CD1B /* circleImg.swift */; };
 		BA7E8CA72012632F0075DAD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7E8CA62012632F0075DAD4 /* AppDelegate.swift */; };
 		BA7E8CAC2012632F0075DAD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA7E8CAA2012632F0075DAD4 /* Main.storyboard */; };
 		BA7E8CAE2012632F0075DAD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA7E8CAD2012632F0075DAD4 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		A07062B7BA573304FD51712E /* Pods-SmackApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackApp/Pods-SmackApp.release.xcconfig"; sourceTree = "<group>"; };
 		BA64106E20135B300019CD1B /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		BA64107020135C870019CD1B /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		BA64107220136B9D0019CD1B /* circleImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circleImg.swift; sourceTree = "<group>"; };
 		BA7E8CA32012632F0075DAD4 /* SmackApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7E8CA62012632F0075DAD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA7E8CAB2012632F0075DAD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				BA7E8CC420126F630075DAD4 /* GradientView.swift */,
 				BA7E8CD02012AD590075DAD4 /* Roundedbutton.swift */,
 				BA64107020135C870019CD1B /* AvatarCell.swift */,
+				BA64107220136B9D0019CD1B /* circleImg.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				BA7E8CA72012632F0075DAD4 /* AppDelegate.swift in Sources */,
 				BA7E8CBC2012662F0075DAD4 /* SWRevealViewController.m in Sources */,
 				BA7E8CC820127D530075DAD4 /* Constants.swift in Sources */,
+				BA64107320136B9D0019CD1B /* circleImg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
