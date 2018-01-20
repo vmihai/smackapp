@@ -15,6 +15,7 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     //Variables
     var avatarName =  "profileDefault"
@@ -23,6 +24,8 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        
         
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -36,7 +39,8 @@ class CreateAccountVC: UIViewController {
     }
     
     @IBAction func createBtnPressed(_ sender: UIButton) {
-        
+        spinner.isHidden = false
+        spinner.startAnimating()
         guard let email = self.emailTxt.text, emailTxt.text != "" else {return}
         guard let password = self.passwordTxt.text, passwordTxt.text != "" else {return}
         guard let name = self.usernameTxt.text, usernameTxt.text != "" else {return}
@@ -47,8 +51,10 @@ class CreateAccountVC: UIViewController {
                     if success {
                         AuthService.instance.createUser(name: name, email: email, avatarName: self.avatarName, avatarColor: self.avatarColor, completion: { (success) in
                             if success {
-                                debugPrint(UserDataService.instance.name, UserDataService.instance.avatarName)
+                                self.spinner.isHidden = true
+                                self.spinner.stopAnimating()
                                 self.performSegue(withIdentifier: UNWIND, sender: nil)
+                                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGED, object: nil)
                             }
                         })
                     }
@@ -67,10 +73,26 @@ class CreateAccountVC: UIViewController {
         let b = CGFloat(arc4random_uniform(255)) / 255
         
         bgColor = UIColor(red: r, green: g, blue: b, alpha: 1)
-        self.userImg.backgroundColor = bgColor
+        UIView.animate(withDuration: 0.2){
+            self.userImg.backgroundColor = self.bgColor
+        }
+        
     }
     
     @IBAction func closeBtnPressed(_ sender: UIButton) {
         performSegue(withIdentifier: UNWIND, sender: nil)
+    }
+    
+    func setupView() {
+        spinner.isHidden = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
+        view.addGestureRecognizer(tap)
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+    }
+    
+    @objc func handleTap() {
+        view.endEditing(true)
     }
 }

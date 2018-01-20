@@ -399,13 +399,19 @@
                                     <action selector="generateAvatarPressed:" destination="gUC-dn-D5k" eventType="touchUpInside" id="pNp-Gh-0VH"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="sCb-ek-A8L">
+                                <rect key="frame" x="169" y="275" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="U9P-FW-s5N" firstAttribute="top" secondItem="wvj-kY-N7N" secondAttribute="top" constant="60" id="Bga-jm-Lhj"/>
                             <constraint firstItem="wvj-kY-N7N" firstAttribute="trailing" secondItem="Cip-rs-AFA" secondAttribute="trailing" constant="8" id="DK6-Na-btC"/>
+                            <constraint firstItem="sCb-ek-A8L" firstAttribute="centerY" secondItem="o7o-w8-6nM" secondAttribute="centerY" constant="-40" id="OeR-rz-X0k"/>
                             <constraint firstItem="owN-32-zxc" firstAttribute="top" secondItem="v6i-Tv-veb" secondAttribute="bottom" constant="40" id="ROW-XL-b5E"/>
                             <constraint firstItem="1m7-P5-R9m" firstAttribute="centerX" secondItem="o7o-w8-6nM" secondAttribute="centerX" id="Spl-FX-kHu"/>
+                            <constraint firstItem="sCb-ek-A8L" firstAttribute="centerX" secondItem="o7o-w8-6nM" secondAttribute="centerX" id="V2d-dZ-ycQ"/>
                             <constraint firstItem="U9P-FW-s5N" firstAttribute="centerX" secondItem="o7o-w8-6nM" secondAttribute="centerX" id="VbG-Dx-EQd"/>
                             <constraint firstItem="j5E-aZ-BvY" firstAttribute="centerX" secondItem="o7o-w8-6nM" secondAttribute="centerX" id="YmX-vE-bJE"/>
                             <constraint firstItem="wvj-kY-N7N" firstAttribute="bottom" secondItem="1m7-P5-R9m" secondAttribute="bottom" constant="20" id="aWQ-lZ-7SN"/>
@@ -423,6 +429,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="rgw-TN-bfL" id="yoI-X5-KMA"/>
                         <outlet property="passwordTxt" destination="RFO-gl-XqJ" id="GS6-XK-5ff"/>
+                        <outlet property="spinner" destination="sCb-ek-A8L" id="CFC-it-Nfd"/>
                         <outlet property="userImg" destination="owN-32-zxc" id="Pge-fV-z8H"/>
                         <outlet property="usernameTxt" destination="4uL-e2-faG" id="aLG-wS-pz1"/>
                         <segue destination="wHA-m6-Woo" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="50M-ax-MkZ"/>
